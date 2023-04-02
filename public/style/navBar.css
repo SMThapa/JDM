@@ -1,0 +1,139 @@
+.header{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    text-align: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    padding: 0 3%;
+    background-color: transparent;
+}
+
+.menu1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    /* height: 4rem;    */
+    width: 8rem;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+ul li a{
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+}
+
+ul li a:hover{
+    color: #de3450;
+}
+
+.hamburgerMenu{
+    position: fixed;
+    top: 0;
+    right: -340px;
+    width: 340px;
+    height: 100vh;
+    background-color: white;
+    z-index: 2;
+    transition: right .4s ease-in-out;
+}
+.hamburgerMenu.open{
+    right: 0px;
+}
+.hamburgerMenu button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 3px;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    margin: 25px;
+    background-color: transparent;
+    transition: .5s;
+}.hamburgerMenu button:hover{
+    background-color: rgb(229, 229, 229);
+}
+
+.hamburgerMenu ul{
+    display: flex;
+    flex-direction:column ;
+    padding: 0 40px;
+    padding-top: 80px;
+}
+.hamburgerMenu ul li{
+    font-size: 16px;
+    letter-spacing: .3px;
+    padding: 8px 0;
+    margin: 6px 0;
+    border-radius: 3px;
+    transition: .5s;
+}
+.hamburgerMenu ul li:hover{
+    background-color: rgb(229, 229, 229);
+}.hamburgerMenu ul li a:hover{
+    color: black;
+}
+
+.background{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0, .3);
+    backdrop-filter: blur(5px);
+    transition: left 1s ease-in;
+}
+.background.open{
+    display: initial;
+}
+
+@media screen and (max-width:1200px){
+    .menu1{
+        display: none;
+    }
+    .menu2 li:nth-child(-n+2){
+        display: none;
+    }
+
+    .header{
+        /* display: grid;
+        grid-template-columns: 200px auto 200px; */
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        height: 10vh;
+        width: 100vw;
+        padding: 0 3%;
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width:600px){
+    .logo img{
+        height: 3rem;   
+        width: 6rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+    /* -n+4 gives 1st child to 4th one */
+    .hamburgerMenu ul li:nth-child(-n+4){
+        display: none;
+    }
+}

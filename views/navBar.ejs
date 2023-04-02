@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/navBar.css">
+</head>
+<body>
+    
+
+    <div class="navbar">
+        <div class="header">
+            <div class="logo"><a href="/"><img src="images/LOGO.png" alt="LOGO"></a></div>
+            <ul class="menu1">
+                <li><a href="#nissanR34">Nissan R34</a></li>
+                <li><a href="#lancerEX">Mitsubishi L-EX</a></li>
+                <li><a href="#supraMK4">Supra MK4</a></li>
+                <li><a href="#mazdaRX7">Mazda RX7</a></li>
+            </ul>
+        
+            <ul class="menu2">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a style="cursor: pointer;" onclick="openMenu()">Menu</a></li>
+            </ul>
+        </div>
+
+        <div class="background" onclick="closeMenu()"></div>
+         
+
+        <div class="hamburgerMenu">
+            <button onclick="closeMenu()"><img src="https://img.icons8.com/ios-filled/150/null/delete-sign--v1.png"/></button>
+            <ul>
+                <li><a href="#nissanR34">Nissan r34</a></li>
+                <li><a href="#lancerEX">Mitsubishi L-EX</a></li>
+                <li><a href="#supraMK4">Supra MK4</a></li>
+                <li><a href="#mazdaRX7">Mazda RX7</a></li>
+                <li><a href="#accessories">Accessories</a></li>            
+                <li><a href="#">Find Us</a></li>            
+                <li><a href="#">Support</a></li>            
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Account</a></li>            
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/navLogic.js"></script>
+</body>
+</html>
