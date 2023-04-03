@@ -25,3 +25,12 @@ img{
     width: 100%;
     object-fit: cover;
 }
+
+#preloder{
+    background: white url('../images/preloder.gif') no-repeat center center;
+    background-size: 450px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}

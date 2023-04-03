@@ -7,13 +7,23 @@
     <title>JDM</title>
     <link rel="icon" href="images/golo.png" type="image/icon type">
 
-    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/primary.css">
 </head>
 <body>
+
+    <div id="preloder">
+
+    </div>
 
     <%- include('./navBar') %>
 
     <%- body %>
 
+    <script>
+        const preloder = document.getElementById('preloder');
+        window.addEventListener('load', function(){
+            preloder.style.display = 'none';
+        })
+    </script>
 </body>
 </html>
