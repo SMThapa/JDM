@@ -60,7 +60,7 @@ button{
     border: none;
     border-radius: 5px;
     height: 2.8rem;
-    width: 18vw;
+    width: 17vw;
     font-size: 15px;
     letter-spacing: .8px;
     font-weight: 500;
@@ -82,7 +82,9 @@ button{
         border-bottom: 1px solid black;
     }
     .items{
-        padding: 28% 0;
+        padding: 0;
+        margin-top:100px;
+        padding-bottom: 200px;
     }
     button{
         height: 3rem;
