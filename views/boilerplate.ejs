@@ -8,6 +8,21 @@
     <link rel="icon" href="images/golo.png" type="image/icon type">
 
     <link rel="stylesheet" href="style/primary.css">
+    <style>
+        #preloder{
+            background: white url('../images/preloder.gif') no-repeat center center;
+            background-size: 350px;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+        @media screen and (max-width:600px){
+            #preloder{
+                background-size: 280px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -19,7 +34,7 @@
 
     <%- body %>
 
-    <script defer>
+    <script async>
         const preloder = document.getElementById('preloder');
         window.addEventListener('load', function(){
             preloder.style.display = 'none';

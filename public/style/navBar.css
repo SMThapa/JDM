@@ -8,7 +8,16 @@
     width: 100vw;
     padding: 0 3%;
     background-color: transparent;
-    opacity: 1;
+    opacity: 0;
+    animation: delayHeader 1s forwards;
+    animation-delay: .5s;
+}
+@keyframes delayHeader{
+    50%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
 }
 
 .menu1{
@@ -21,6 +30,21 @@
     /* height: 4rem;    */
     width: 8rem;
 }
+.logo img{
+    opacity: 0;
+    animation: revealLogo .5s forwards;
+    animation-delay: 1s;
+}
+@keyframes revealLogo{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 
 .nav-items{
     display: flex;
@@ -34,9 +58,10 @@ ul{
 
 ul li a{
     padding: 10px;
-    color: black;
     font-size: 16px;
+    color: black;
 }
+
 
 ul li a:hover{
     color: #de3450;
@@ -45,18 +70,18 @@ ul li a:hover{
 .hamburgerMenu{
     position: fixed;
     top: 0;
-    right: -340px;
-    width: 340px;
+    right: -440px;
+    width: 440px;
     height: 100vh;
     background-color: white;
     z-index: 1;
     /* transition: right .4s ease-in-out; */
-    transition-delay: .3s;
-    transition: .3s ease-in-out;
+    transition-delay: .2s;
+    transition:.5s ease-in-out;
 
 }
 .hamburgerMenu.open{
-    right: 0px;
+    right: 0%;
 }
 .hamburgerMenu button{
     position: absolute;
@@ -132,7 +157,7 @@ ul li a:hover{
     }
     .hamburgerMenu{
         right: -340px;
-        width: 260px;
+        width: 240px;
     }
 }
 
