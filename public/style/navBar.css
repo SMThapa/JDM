@@ -29,7 +29,7 @@
 
 .logo{
     /* height: 4rem;    */
-    width: 8rem;
+    width: 11rem;
 }
 .logo img{
     opacity: 0;
@@ -71,18 +71,20 @@ ul li a:hover{
 .hamburgerMenu{
     position: fixed;
     top: 0;
-    right: -440px;
-    width: 440px;
+    right: -340px;
+    width: 340px;
     height: 100vh;
     background-color: white;
     z-index: 1;
     /* transition: right .4s ease-in-out; */
+    opacity: 0;
     transition-delay: .2s;
     transition:.5s ease-in-out;
 
 }
 .hamburgerMenu.open{
     right: 0%;
+    opacity: 1;
 }
 .hamburgerMenu button{
     position: absolute;
