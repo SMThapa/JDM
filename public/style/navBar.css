@@ -154,6 +154,9 @@ ul li a:hover{
 }
 
 @media screen and (max-width:600px){
+    .logo{
+        width: 7rem;
+    }
     .logo img{
         height: 3rem;   
         width: 6rem;
