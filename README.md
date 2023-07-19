@@ -6,7 +6,7 @@ This repository contains a clone of the Tesla landing page. It is a static webpa
 
 ## Preview
 
-You can preview the cloned Tesla landing page by visiting the following link: 
+You can preview the cloned Tesla landing page by visiting the following link: https://jdm.onrender.com
 ## Technology Used
 
 The Tesla landing page clone was built using the following technologies:
